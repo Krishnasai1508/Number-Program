@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class first_last_digit
+{
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int n=s.nextInt();
+		int first_last=0;
+		int last=n%10;
+		while (n>9)
+		{
+			n=n/10;
+		}
+		first_last=n+last;
+		System.out.println("The Sum of Last and First Number is "+first_last);
+	}
+}
